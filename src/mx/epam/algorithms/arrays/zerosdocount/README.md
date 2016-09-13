@@ -4,8 +4,8 @@ Having an arrays of numbers, place all zeros to the left of the array (if any).
 The operation must preserve the existing relative order between the numbers.
 
 Extra:
-Solve this problem is to solve it in-line (without any extra arrays) 
-and in a single iteration (only one for).
+An objective of this problem is to solve it in-line and in O(1N).
+This is, without any extra arrays and in a single iteration (only one for).
 Otherwise, give a demonstration that this is not possible.
 
 ## Input 
@@ -20,7 +20,8 @@ Case 1:
 
 ## Output
 
-An integer array with all zeros at the beginning.
+An integer array with all zeros at the beginning, with the rest of the elements
+in their relative original order.
 
 ```
 0 0 0 0 1 3 4 2 1
