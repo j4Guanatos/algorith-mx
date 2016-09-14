@@ -3,10 +3,14 @@
 Having an arrays of numbers, place all zeros to the left of the array (if any).
 The operation must preserve the existing relative order between the numbers.
 
-Extra:
+__Extra:__
 An objective of this problem is to solve it in-place and in O(1N).
 This is, without any extra arrays and in a single iteration (only one for).
 Otherwise, give a demonstration that this is not possible.
+
+__Double Extra:__
+Make the number that is sent to the left configurable to be any number.
+Also the side can be configurable: Can be sent left or right.
 
 ## Input 
 An integer array. The size of the array can be 0 to 100,000.
