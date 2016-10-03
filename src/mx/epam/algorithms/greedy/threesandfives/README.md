@@ -16,17 +16,21 @@ __Extra__: The algorithm is proven to be solved in O(1).
 You will receive a number _t_ which is the number of test cases.
 Following there will be _t_ lines containing the number _n_ for each test case.
 
+```
 4
 1
 3
 5
 11
+```
 
 ## Sample Output:
 
 Print one line containing the corresponding _m_ for each test case.
 
+```
 -1
 555
 33333
 55555533333
+```
