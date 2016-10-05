@@ -1,0 +1,6 @@
+C:\Algo\threesandfives\threesandfives\bin\Debug\threesandfives.exe.config
+C:\Algo\threesandfives\threesandfives\obj\Debug\threesandfives.csprojResolveAssemblyReference.cache
+C:\Algo\threesandfives\threesandfives\bin\Debug\threesandfives.exe
+C:\Algo\threesandfives\threesandfives\bin\Debug\threesandfives.pdb
+C:\Algo\threesandfives\threesandfives\obj\Debug\threesandfives.exe
+C:\Algo\threesandfives\threesandfives\obj\Debug\threesandfives.pdb
