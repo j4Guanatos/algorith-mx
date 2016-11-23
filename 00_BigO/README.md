@@ -8,14 +8,21 @@ According to what we reviewed during the Tuesday, November 22 session A.K.A. _se
 _Try to find and code as many solutions as possible, this to compare and understand different complexities_
 
 ### Input example: 
+
+```
 Input Array: [12, 4, 2, 7, 9, 27, 1, 3, 8, 6, 5, 0]
 Number to search: 7
+```
 
 ### Output example:
+
+```
 {{4,3}, {2,5}, {7,0}, {1,6}}
+```
 
 ### Assumptions
 You can code your solution considering (or not) the following assumptions:
+
 1. The order of the results does not matter
 2. The array contains unique elements
 3. The array holds only positive numbers
