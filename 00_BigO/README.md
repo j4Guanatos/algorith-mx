@@ -1,4 +1,4 @@
-# Algorithm Group - Session 0
+# Algorith-MX Group - Session 0
 # Topic: Big O Notation
 
 According to what we reviewed during the Tuesday, November 22 session A.K.A. _session 0_, work on the following task which has at least 3 possible solutions, each one with a different Big O complexity.
