@@ -28,3 +28,7 @@ You can code your solution considering (or not) the following assumptions:
 3. The array holds only positive numbers
 
 #### Let's keep our code clean and beautiful!
+
+#### Quick Big O complexities reference: [Big O Cheat Sheet]
+
+[Big O Cheat Sheet]: http://bigocheatsheet.com/
