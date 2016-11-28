@@ -18,7 +18,7 @@ class Program
             GetSumPairs(input, numberToSearch);
             sw.Stop();
             Console.WriteLine($"With e{e}, {sw.ElapsedMilliseconds}ms");
-            
+
         }
         Console.ReadLine();
     }
@@ -27,17 +27,10 @@ class Program
     {
 
         var asDictionary = input.ToDictionary(n => n); // THIS is O(n)
-        Func<KeyValuePair<int, int>, bool> firstNumberLessThanHalf = kvp => kvp.Key <= numberToSearch / 2;      // O(1)
-        Func<KeyValuePair<int, int>, bool> itIsNotExactlyHalf = kvp => numberToSearch - kvp.Key != kvp.Key;   // O(1)
-        Func<KeyValuePair<int, int>, bool> complmentExists = kvp => asDictionary.ContainsKey(numberToSearch - kvp.Key); // O(1)
 
-        Func<KeyValuePair<int, int>, bool> canBiuldPair = kvp => (firstNumberLessThanHalf(kvp) && itIsNotExactlyHalf(kvp) && complmentExists(kvp)); // THIS is O(1), as it is already a Dictionary
-
-        Func<KeyValuePair<int, int>, Tuple<int, int>> asTuple = kvp => new Tuple<int, int>(kvp.Key, numberToSearch - kvp.Key);  // O(1), projection
-
-        var result = asDictionary.Where(canBiuldPair).Select(asTuple);
+        var result = asDictionary.Where(kvp => kvp.Key <= numberToSearch / 2 &&  numberToSearch - kvp.Key != kvp.Key && asDictionary.ContainsKey(numberToSearch - kvp.Key)).Select(kvp => new Tuple<int, int>(kvp.Key, numberToSearch - kvp.Key));
 
         Console.WriteLine(string.Format("{{ {0} }}", String.Join(",", result.Select(tuple => $"{{ {tuple.Item1},{tuple.Item2} }}")))); // O(n) enumeration
-        
+
     }
 }
