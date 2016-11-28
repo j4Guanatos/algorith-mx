@@ -1,13 +1,13 @@
 package com.j4guanatos.algorithms;
 
-class Pair {
+public class Pair {
 	private Integer firstNumber;
 	private Integer secondNumber;
 
 	private Pair() {
 	}
 
-	static Pair getInstance(final Integer firstNumber, final Integer secondNumber) {
+	public static Pair getInstance(final Integer firstNumber, final Integer secondNumber) {
 		Pair pair = new Pair();
 		pair.firstNumber = firstNumber;
 		pair.secondNumber = secondNumber;
@@ -30,9 +30,7 @@ class Pair {
 
 	@Override
 	public int hashCode() {
-		int first = firstNumber > secondNumber ? secondNumber : firstNumber;
-		int second = firstNumber > secondNumber ? firstNumber : secondNumber;
-		return first * 7 + second;
+		return (firstNumber + secondNumber) * 7;
 	}
 
 	@Override
