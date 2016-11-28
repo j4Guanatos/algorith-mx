@@ -27,4 +27,4 @@ You can code your solution considering (or not) the following assumptions:
 2. The array contains unique elements
 3. The array holds only positive numbers
 
-#### Let's keep our clean code and beautiful!
+#### Let's keep our code clean and beautiful!
