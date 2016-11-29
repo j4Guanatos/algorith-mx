@@ -9,17 +9,15 @@ class Program
     {
         IEnumerable<int> input = new int[] { 12, 4, 2, 7, 9, 27, 1, 3, 8, 6, 5, 0 };
         int numberToSearch = 7;
-        Random rand = new Random();
-        for (var e = 0; e < 4; e++)
-        {
-            input = Enumerable.Range(0, (int)(Math.Pow(10, e)) ).Select(r => rand.Next()).Distinct();
-            var sw = new Stopwatch();
-            sw.Start();
-            GetSumPairs(input, numberToSearch);
-            sw.Stop();
-            Console.WriteLine($"With e{e}, {sw.ElapsedMilliseconds}ms");
-            
-        }
+        GetSumPairs(input, numberToSearch);
+        IEnumerable<int> input1_1 = new int[] { 1, 2, 3, 4, 5, 6, 7, 9, 10 };
+        IEnumerable<int> input1_2 = new int[] { 21, 12, 43, 4, 55, 63, 37, 99, 10 };
+        int j = 4;
+        int k = 2;
+        var solution1 = Arrays.Problem1(input1_1);
+        Console.WriteLine($"Solution for problem1: {solution1}");
+        var solution2 = Arrays.Problem2(input1_2,j,k);
+        Console.WriteLine($"Solution for problem2: {solution2}");
         Console.ReadLine();
     }
 

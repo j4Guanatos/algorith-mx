@@ -2,13 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\00_BigO",
-    "\\src\\mx",
-    "\\src\\mx\\epam",
-    "\\src\\mx\\epam\\algorithms",
-    "\\src\\mx\\epam\\algorithms\\greedy",
-    "\\src\\mx\\epam\\algorithms\\greedy\\threesandfives",
-    "\\src\\mx\\epam\\algorithms\\greedy\\threesandfives\\threesandfives"
+    "\\00_BigO\\BigO",
+    "\\01_Arrays"
   ],
-  "SelectedNode": "\\00_BigO\\BigO.cs",
+  "SelectedNode": "\\00_BigO\\BigO\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

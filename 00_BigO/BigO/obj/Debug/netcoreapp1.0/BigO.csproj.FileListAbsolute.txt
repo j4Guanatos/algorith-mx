@@ -1,0 +1,6 @@
+C:\Users\Oscar_Legorreta\Source\Repos\algorith-mx\00_BigO\BigO\bin\Debug\netcoreapp1.0\BigO.dll
+C:\Users\Oscar_Legorreta\Source\Repos\algorith-mx\00_BigO\BigO\bin\Debug\netcoreapp1.0\BigO.pdb
+C:\Users\Oscar_Legorreta\Source\Repos\algorith-mx\00_BigO\BigO\obj\Debug\netcoreapp1.0\BigO.csprojResolveAssemblyReference.cache
+C:\Users\Oscar_Legorreta\Source\Repos\algorith-mx\00_BigO\BigO\obj\Debug\netcoreapp1.0\BigO.AssemblyInfo.cs
+C:\Users\Oscar_Legorreta\Source\Repos\algorith-mx\00_BigO\BigO\obj\Debug\netcoreapp1.0\BigO.dll
+C:\Users\Oscar_Legorreta\Source\Repos\algorith-mx\00_BigO\BigO\obj\Debug\netcoreapp1.0\BigO.pdb
