@@ -7,9 +7,8 @@ public class Arrays
     {
         return ((array.Count()+1) * (array.Count() + 2) / 2) - array.Sum(); //O(N)
     }
-    public static Tuple<int, int> Problem2(IEnumerable<int> array, int j, int k)
+    public static IEnumerable<int> Problem2(IEnumerable<int> array, int j, int k)
     {
-        var sorted = array.OrderBy(n => n); // O(N log N)
-        return new Tuple<int, int>(sorted.ElementAt(j-1) , sorted.ElementAt(sorted.Count()-k)); // O(N)
+        return array.OrderBy(n => n).Where( (v,i) => i == (j - 1) || i == array.Count()-k ); // O(N log N)
     }
 }
