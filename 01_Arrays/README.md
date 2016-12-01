@@ -6,7 +6,7 @@
 You have an unsorted integer array which contains numbers from 1 to n but one number is missing.
 Write a program (or pseudo-code) to find that missing number.
 
-Example
+#### Example
 
 Input:
 
