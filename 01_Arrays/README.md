@@ -10,10 +10,11 @@ Write a program (or pseudo-code) to find that missing number.
 
 Input:
 
-> {1, 2, 3, 4, 5, 6, 8, 9, 10}
+`{1, 2, 3, 4, 5, 6, 8, 9, 10}`
 
 Output:
-> 7
+
+`7`
 
 
 ### Problem #2
