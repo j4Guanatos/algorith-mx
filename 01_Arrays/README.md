@@ -26,7 +26,7 @@ Given an unsorted array of numbers, j and k, you need to find the jst smallest a
 Input:
 
 ```
-{1, 3, 7, 9, 4}, j=2, k = 3
+{1, 3, 7, 9, 4}, j = 2, k = 3
 ```
 
 Output:
