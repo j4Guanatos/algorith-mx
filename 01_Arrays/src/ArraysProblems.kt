@@ -6,15 +6,15 @@ fun searchMissing(sequentialArray: Array<Int>): Int = (1..sequentialArray.size +
 
 fun searchMissing2(sequentialArray: Array<Int>): Int = ((sequentialArray.size + 1) * (sequentialArray.size + 2)) / 2 - sequentialArray.sum()
 
-fun searchMissingFull(sequentialArray: Array<Int>): Int {
-    sequentialArray.sort()
-
-    var i = 0
-    while(i < sequentialArray.size){
-
-        i++
-    }
-}
+//fun searchMissingFull(sequentialArray: Array<Int>): Int {
+//    sequentialArray.sort()
+//
+//    var i = 0
+//    while(i < sequentialArray.size){
+//
+//        i++
+//    }
+//}
 
 fun jAndK(arr: Array<Int>, j: Int, k: Int): Pair<Int, Int> {
     val sortedArr = arr.sortedArray()
