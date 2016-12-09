@@ -1,4 +1,4 @@
-# Algorithms EPAMX
+# Algorith-MX
 
 EPAM Mexico Algorithms study group.
 
