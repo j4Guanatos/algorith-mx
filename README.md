@@ -1,6 +1,6 @@
 # Algorithms EPAMX
 
-EPAM Mexico Algorithms study group.
+EPAM Mexico Algorithms study group/ Ulises
 
 ### How it works
 
