@@ -1,4 +1,4 @@
-package j4g;
+package j4g.util;
 
 /**
  * Created by Ernesto_Espinosa on 11/28/2016.
