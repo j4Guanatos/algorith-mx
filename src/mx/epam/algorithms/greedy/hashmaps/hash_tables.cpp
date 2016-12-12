@@ -25,13 +25,13 @@ int main() {
 
 int* twoSum(int arr[], int target, int n) {
 	int* indexes = new int[2]{ -1, -1 };
-	map<int,int> compliments;
+	map<int,int> complements;
 	map<int, int>::iterator it;
 
 	for (int i = 0; i < n; i++)
 	{
-		it = compliments.find( arr[i]);
-		if (it != compliments.end())
+		it = complements.find( arr[i]);
+		if (it != complements.end())
 		{
 			// this is our result
 			indexes[0] = i;
@@ -41,7 +41,7 @@ int* twoSum(int arr[], int target, int n) {
 		else {
 			// save the compliment as key and the index as value
 			pair<int, int> entry(target - arr[i], i);
-			compliments.insert(entry);
+			complements.insert(entry);
 		}
 	}
 	return indexes;
