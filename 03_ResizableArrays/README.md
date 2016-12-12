@@ -28,23 +28,23 @@ The first line will be the original array.
 Following arbitrary number of lines will have an operation id (i or u), indicating the operation to perform, 
 followed by an integer array of arbitrary size, in ascending order. 
 
-´´´
+```
 1 5 9 10 17 20 23
 i 2 4 6 8 10 12 14 16 18 20
 u 3 9 18 27
 u 2 3 5 7 11 13 17
-´´´
+```
 
 ### Output Example
 
-´´´
+```
 2 3 5 7 9 10 11 13 17 18 20 27
-´´´
+```
 
 ### Sample Case Step by Step
 
-The original array intersected with the first line will result in: 10 20
-This result union the second line will result in: 3 9 10 18 20 27
-This result union the third line will result in: 2 3 5 7 9 10 11 13 17 18 20 27
+* The original array intersected with the first line will result in: 10 20
+* This result union the second line will result in: 3 9 10 18 20 27
+* This result union the third line will result in: 2 3 5 7 9 10 11 13 17 18 20 27
 
 #### Let's keep our code clean and beautiful!
