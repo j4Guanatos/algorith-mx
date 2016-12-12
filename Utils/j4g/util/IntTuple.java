@@ -3,10 +3,10 @@ package j4g.util;
 /**
  * Created by Ernesto_Espinosa on 11/28/2016.
  */
-public class Tuple {
+public class IntTuple {
     private int a, b;
 
-    private Tuple(int a, int b) {
+    private IntTuple(int a, int b) {
         this.a = a;
         this.b = b;
     }
@@ -19,8 +19,8 @@ public class Tuple {
         return this.b;
     }
 
-    public static Tuple get(int a, int b) {
-        return new Tuple(a, b);
+    public static IntTuple get(int a, int b) {
+        return new IntTuple(a, b);
     }
 
     @Override
@@ -28,10 +28,10 @@ public class Tuple {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Tuple tuple = (Tuple) o;
+        IntTuple intTuple = (IntTuple) o;
 
-        if (a != tuple.a) return false;
-        return b == tuple.b;
+        if (a != intTuple.a) return false;
+        return b == intTuple.b;
 
     }
 
