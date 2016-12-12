@@ -1,6 +1,6 @@
 package j4g;
 
-import j4g.util.Tuple;
+import j4g.util.IntTuple;
 
 import java.util.Map;
 import java.util.function.Function;
@@ -22,7 +22,7 @@ public class SumPairIndex {
         return new SumPairIndex(target);
     }
 
-    public Tuple using(int...array) {
+    public IntTuple using(int...array) {
         Map<Integer, Integer> hash;
         Map.Entry<Integer, Integer> sumEntry;
 
@@ -35,7 +35,7 @@ public class SumPairIndex {
             .stream()
             .filter(e -> hash.containsKey(target - e.getKey())).findFirst().get();
 
-        return Tuple.get(sumEntry.getValue(), hash.get(target - sumEntry.getKey()));
+        return IntTuple.get(sumEntry.getValue(), hash.get(target - sumEntry.getKey()));
     }
 
     public static void main(String[] args) {
