@@ -149,10 +149,36 @@ left by the resizing operation. Example:
 | 32 bytes | 36 bytes | 24 bytes | 40 bytes (if 16 and 24 were adjacent) |
 | 64 bytes | 54 bytes | 36 bytes | 76 bytes (size enough to be reused) |
 
-Ideally, the limit will be found at the _Golden Ratio_ which solves the equation x^(n-1) = x^(n+1) - x^n.
-This results as the optimal reusing memory upper bound for resizing factors.
+Ideally, the limit will be found at the _Golden Ratio_ which solves the equation x^(n-1) = x^(n+1) - x^n:
+
+```
+1 + x + ... + x^(n-2) = x^n
+```
+
+Each iteration request x^(n+1) memory to allocate the new array, which means that for the next iteration (x^(n+2)) we
+would want to have the previous sum equal to reuse the space.
+
+Discard the 1 element by being dominated by the highest polynomial factor and then solving the equation results in the
+Golden Ratio as the optimal reusing memory upper bound for resizing factors.
+
+```
+x^(n-1) = x^(n+1) - x^n  ->  1 = x^2 - x  ->  x = 1/2 * (1 + sqrt(5)) = 1.618...
+```
 
 ## Amortized Complexity
+
+Which is the complexity of insert/remove operations in a resizable array? A way to provide a performance guarantee is to
+amortize the cost, keeping track of the total cost of all operations, divided by the number of operations. We allow some
+expensive operations (to copy the array contents into the new array), but keeping the average cost low.
+
+In the case of N being a power of 2, how many array entries are accessed for N consecutive calls to add()? We have N
+accesses in constant time (one per push) plus the resizing operations in terms of a sum of powers of 2 up to 2N:
+
+```
+N + 2 + 4 + 8 + ... + 2N = 5N - 4.
+```
+
+This sum divided by N operations results in an amortized constant complexity.
 
 ## Coding Task
 
