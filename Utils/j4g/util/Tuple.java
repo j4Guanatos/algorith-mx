@@ -41,4 +41,9 @@ public class Tuple {
         result = 31 * result + b;
         return result;
     }
+
+    @Override
+    public String toString() {
+        return String.format("(%d, %d)", a, b);
+    }
 }
