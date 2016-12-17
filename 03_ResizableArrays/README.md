@@ -23,7 +23,7 @@ One simple strategy to maintain a dynamic size of an array-based structure is to
 collection can be. For example the following API will maintain a fixed size array of strings, and it can be used to
 implement a LIFO structure (code link to [FixedSizeCollection](j4g/arrays/FixedSizeCollection.java)):
 
-```
+```java
 public class FixedSizeCollection<T> {
    private T[] elements;
    private int size = 0;
