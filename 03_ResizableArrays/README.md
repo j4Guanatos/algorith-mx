@@ -72,7 +72,7 @@ inner array is quarter filled, a new array with halved size is created and fille
 the comparison is done against the quarter of capacity and the resize is half the array size, this is in order to avoid 
 to resize with consecutive remove/add operations at the half of capacity, resizing the array in both sides.
 
-```
+```java
 public class ResizableCollection<T> {
 
     private static final int INITIAL_SIZE = 4;
@@ -123,31 +123,31 @@ public class ResizableCollection<T> {
 
 ## Comparison of Increasing/Decreasing Factors
 
-| Implementation | Increasing Factor | Decreasing Factor | Notes |
-|----------------|-------------------|-------------------|-----------|
-| Java ArrayList | 1.5 | No decreasing | TrimToSize used for decreasing, ensures amortized time |
-| Java HashMap | 2.0 | No decreasing | Bigger factor to reduce collisions |
-| Robert Sedgewick | 2.0 | check - 0.25, reduce - 0.5 | Amortized time with both factors |
-| Golden Ratio | 1.618... | 0.618... | Optimal factor, amortized time |
+| Implementation   | Increasing Factor | Decreasing Factor          | Notes                                    |
+| ---------------- | ----------------- | -------------------------- | ---------------------------------------- |
+| Java ArrayList   | 1.5               | No decreasing              | TrimToSize used for decreasing, ensures amortized time |
+| Java HashMap     | 2.0               | No decreasing              | Bigger factor to reduce collisions       |
+| Robert Sedgewick | 2.0               | check - 0.25, reduce - 0.5 | Amortized time with both factors         |
+| Golden Ratio     | 1.618...          | 0.618...                   | Optimal factor, amortized time           |
 
 The reason why in general 1.5 is preferred over a factor of 2.0 is because we would want to reuse the holes in memory
 left by the resizing operation. Example:
 
 #### Resizing with a factor of 2
 
-| Size | New Allocation | Freed memory | Memory Hole |
-|------|----------------|--------------|-------------|
-| 16 bytes | 32 bytes | 16 bytes | 16 bytes |
-| 32 bytes | 64 bytes | 32 bytes | 48 bytes (if 16 and 32 were adjacent) |
-| 64 bytes | 128 bytes | 64 bytes | 112 bytes (not enough to be reused) |
+| Size     | New Allocation | Freed memory | Memory Hole                           |
+| -------- | -------------- | ------------ | ------------------------------------- |
+| 16 bytes | 32 bytes       | 16 bytes     | 16 bytes                              |
+| 32 bytes | 64 bytes       | 32 bytes     | 48 bytes (if 16 and 32 were adjacent) |
+| 64 bytes | 128 bytes      | 64 bytes     | 112 bytes (not enough to be reused)   |
 
 #### Resizing with a factor of 1.5
 
-| Size | New Allocation | Freed memory | Memory Hole |
-|------|----------------|--------------|-------------|
-| 16 bytes | 24 bytes | 16 bytes | 16 bytes |
-| 32 bytes | 36 bytes | 24 bytes | 40 bytes (if 16 and 24 were adjacent) |
-| 64 bytes | 54 bytes | 36 bytes | 76 bytes (size enough to be reused) |
+| Size     | New Allocation | Freed memory | Memory Hole                           |
+| -------- | -------------- | ------------ | ------------------------------------- |
+| 16 bytes | 24 bytes       | 16 bytes     | 16 bytes                              |
+| 32 bytes | 36 bytes       | 24 bytes     | 40 bytes (if 16 and 24 were adjacent) |
+| 64 bytes | 54 bytes       | 36 bytes     | 76 bytes (size enough to be reused)   |
 
 Ideally, the limit will be found at the _Golden Ratio_ which solves the equation x^(n-1) = x^(n+1) - x^n:
 
