@@ -6,23 +6,16 @@ import java.util.*
  * Created by sierisimo on 12/17/16.
  *
  */
-class OperableArray(val initialCapacity: Int = 0) {
+class OperableArray() {
     private var elements: IntArray = intArrayOf()
 
-    private var size = 0
-
-    constructor(initialCapacity: Int = 0, array: IntArray) : this(initialCapacity) {
-        if (initialCapacity > size) {
-            elements = IntArray(initialCapacity)
-        }
-        copyToElements(array)
-
-        size = elements.size
+    constructor(array: IntArray) : this() {
+        elements = array.copyOf()
     }
 
     operator fun plus(array: IntArray) {
         println("Union Called")
-        size = elements.size + array.size
+        val size = elements.size + array.size
 
         val oldArray = elements.copyOf()
         elements = IntArray(size)
@@ -54,15 +47,33 @@ class OperableArray(val initialCapacity: Int = 0) {
 
     operator fun mod(array: IntArray) {
         println("Intersection called")
-    }
+        val oldArray = elements.copyOf()
 
-    private fun copyToElements(array: IntArray) {
-        for ((i, v) in array.withIndex()) {
-            elements[i] = v
+        elements = IntArray(elements.size)
+
+        var oIdx = 0
+        var nIdx = 0
+        var idx = 0
+
+        while (nIdx < array.size && oIdx < oldArray.size) {
+            val oElement = if (oIdx >= oldArray.size) Int.MAX_VALUE else oldArray[oIdx]
+            val nElement = array[nIdx]
+
+            if (oElement == nElement) {
+                elements[idx++] = oldArray[oIdx++]
+            } else {
+                if (oElement < nElement) {
+                    oIdx++
+                } else {
+                    nIdx++
+                }
+            }
         }
+
+        removeUnnecessarySpace()
     }
 
-    // FIXME: Use the same array
+    // FIXME: Use the same array if possible
     private fun removeUnnecessarySpace() {
         var lastIndex = 0
         var previousValue: Int = elements[0]
@@ -83,6 +94,6 @@ class OperableArray(val initialCapacity: Int = 0) {
     }
 
     override fun toString(): String {
-        return "OperableArray{elements: ${elements.toList()}, size: $size"
+        return "OperableArray{elements: ${elements.toList()}}"
     }
 }

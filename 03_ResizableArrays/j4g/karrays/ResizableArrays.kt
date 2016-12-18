@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
 
     val firstArray = inputReader?.split(" ")?.map(String::toInt)?.toIntArray()
 
-    val operableArray = OperableArray(firstArray!!.size, firstArray)
+    val operableArray = OperableArray(firstArray!!)
 
     do {
         inputReader = readLine()
