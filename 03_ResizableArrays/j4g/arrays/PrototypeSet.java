@@ -3,12 +3,10 @@ package j4g.arrays;
 /**
  * Created by Ernesto_Espinosa on 12/19/2016.
  */
-public class PrototypeSet implements Set {
+public class PrototypeSet extends BaseArraySet {
 
-    private int[] array;
-
-    public PrototypeSet(int[] array) {
-        this.array = array;
+    public PrototypeSet(int[] array, double factor) {
+        super(array, factor);
     }
 
     /** {@inheritDoc} */

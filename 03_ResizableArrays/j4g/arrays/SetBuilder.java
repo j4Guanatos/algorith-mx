@@ -10,23 +10,24 @@ public class SetBuilder {
         IN_PLACE() {
 
             @Override
-            Set instance(int[] array) {
-                return new InPlaceSet(array);
+            Set instance(int[] array, double factor) {
+                return new InPlaceSet(array, factor);
             }
         },
         PRODUCE_NEW() {
 
             @Override
-            Set instance(int[] array) {
-                return new PrototypeSet(array);
+            Set instance(int[] array, double factor) {
+                return new PrototypeSet(array, factor);
             }
         };
 
-        abstract Set instance(int[] array);
+        abstract Set instance(int[] array, double factor);
     }
 
     private int[] array;
     private Strategy strategy;
+    private double resizeFactor;
 
     private SetBuilder(int[] array) {
         this.array = new int[array.length];
@@ -42,7 +43,12 @@ public class SetBuilder {
         return this;
     }
 
+    public SetBuilder setFactor(double resizeFactor) {
+        this.resizeFactor = resizeFactor;
+        return this;
+    }
+
     public Set build() {
-        return this.strategy.instance(this.array);
+        return this.strategy.instance(this.array, this.resizeFactor);
     }
 }

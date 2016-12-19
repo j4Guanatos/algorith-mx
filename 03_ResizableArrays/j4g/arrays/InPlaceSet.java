@@ -3,12 +3,10 @@ package j4g.arrays;
 /**
  * Created by Ernesto_Espinosa on 12/19/2016.
  */
-public class InPlaceSet implements Set {
+public class InPlaceSet extends BaseArraySet {
 
-    private int[] array;
-
-    public InPlaceSet(int[] array) {
-        this.array = array;
+    public InPlaceSet(int[] array, double loadFactor) {
+        super(array, loadFactor);
     }
 
     /** {@inheritDoc} */
