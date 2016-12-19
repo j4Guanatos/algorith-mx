@@ -6,15 +6,16 @@ package j4g.arrays;
 public interface Set {
 
     /**
-     * 
-     * @param array
-     * @return
+     * Intersect the current set with the passed array.
+     * @param array Array of integers (in asc order).
+     * @return Set instance with the result of the operation.
      */
     Set intersection(int[] array);
 
+    /**
+     * Union of the current set with the passed array.
+     * @param array Array of integers (in asc order).
+     * @return Set instance with the result of the operation.
+     */
     Set union(int[] array);
-
-    Set intersection(Set set);
-
-    Set union(Set set);
 }
