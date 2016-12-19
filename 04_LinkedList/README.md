@@ -125,3 +125,7 @@ The main advantage is that a _list_ is a _dynamic set_ as mentioned before, this
 
 An array is _static set_, this means that it cannot grow or shrink without creating a new array.
 
+### Problems on LinkedList
+
+To see the problems proposed on this topic see the [Problems directory](problems)
+
