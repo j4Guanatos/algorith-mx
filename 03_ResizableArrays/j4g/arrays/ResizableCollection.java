@@ -1,5 +1,6 @@
 package j4g.arrays;
 
+import java.util.Arrays;
 import java.util.RandomAccess;
 
 public class ResizableCollection<T> implements RandomAccess {
@@ -9,7 +10,16 @@ public class ResizableCollection<T> implements RandomAccess {
     private int size = 0;
 
     public ResizableCollection() {
-        elements = buildGenericArray(INITIAL_SIZE);
+        this(INITIAL_SIZE);
+    }
+
+    public ResizableCollection(int initialSize) {
+        elements = buildGenericArray(initialSize);
+    }
+
+    public ResizableCollection(T[] array) {
+        this(array.length);
+        Arrays.stream(array).forEach(i -> this.add(i));
     }
 
     public static <T> T[] buildGenericArray(int size) {
@@ -51,5 +61,9 @@ public class ResizableCollection<T> implements RandomAccess {
     public T get(int index) {
         if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
         return elements[index];
+    }
+
+    public T[] getArray() {
+        return Arrays.copyOf(this.elements, this.elements.length);
     }
 }
