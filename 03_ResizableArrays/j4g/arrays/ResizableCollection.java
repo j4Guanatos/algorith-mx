@@ -1,6 +1,8 @@
 package j4g.arrays;
 
-public class ResizableCollection<T> {
+import java.util.RandomAccess;
+
+public class ResizableCollection<T> implements RandomAccess {
 
     private static final int INITIAL_SIZE = 4;
     private T[] elements;
@@ -44,5 +46,10 @@ public class ResizableCollection<T> {
 
     public boolean isFull() {
         return false;
+    }
+
+    public T get(int index) {
+        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+        return elements[index];
     }
 }

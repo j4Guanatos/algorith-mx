@@ -24,7 +24,7 @@ collection can be. For example the following API will maintain a fixed size arra
 implement a LIFO structure (code link to [FixedSizeCollection](j4g/arrays/FixedSizeCollection.java)):
 
 ```
-public class FixedSizeCollection<T> {
+public class FixedSizeCollection<T> implements RandomAccess {
    private T[] elements;
    private int size = 0;
    
@@ -53,6 +53,11 @@ public class FixedSizeCollection<T> {
    public boolean isFull() {
       return size == elements.length;
    }
+   
+   public T get(int index) {
+       if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+       return elements[index];
+   }
 }
 ```
 
@@ -73,7 +78,7 @@ the comparison is done against the quarter of capacity and the resize is half th
 to resize with consecutive remove/add operations at the half of capacity, resizing the array in both sides.
 
 ```
-public class ResizableCollection<T> {
+public class ResizableCollection<T> implements RandomAccess {
 
     private static final int INITIAL_SIZE = 4;
     private T[] elements;
@@ -117,6 +122,11 @@ public class ResizableCollection<T> {
 
     public boolean isFull() {
         return false;
+    }
+    
+    public T get(int index) {
+        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+        return elements[index];
     }
 }
 ```
