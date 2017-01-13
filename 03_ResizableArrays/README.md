@@ -53,6 +53,11 @@ public class FixedSizeCollection<T> {
    public boolean isFull() {
       return size == elements.length;
    }
+   
+   public T get(int index) {
+       if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+       return elements[index];
+   }
 }
 ```
 
@@ -117,6 +122,11 @@ public class ResizableCollection<T> {
 
     public boolean isFull() {
         return false;
+    }
+    
+    public T get(int index) {
+        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+        return elements[index];
     }
 }
 ```

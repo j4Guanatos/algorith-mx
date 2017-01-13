@@ -60,10 +60,12 @@ A palindrome is a word, phrase, number, or other sequence of characters which re
 ### Example input
 
 `1 2 3 4 3 2 1`
+
 `1 2 3 4 5 6`
 ### Example output
 
 `true`
+
 `false`
 
 

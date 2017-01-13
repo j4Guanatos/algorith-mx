@@ -1,6 +1,8 @@
 package j4g.arrays;
 
-public class FixedSizeCollection<T> {
+import java.util.RandomAccess;
+
+public class FixedSizeCollection<T> implements RandomAccess {
     private T[] elements;
     private int size = 0;
 
@@ -28,5 +30,10 @@ public class FixedSizeCollection<T> {
 
     public boolean isFull() {
         return size == elements.length;
+    }
+
+    public T get(int index) {
+        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+        return elements[index];
     }
 }
