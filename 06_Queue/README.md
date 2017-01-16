@@ -4,7 +4,7 @@
 
 ### Overview 
 
-A _Stack_ is another abstract data type (ADT), its main methods are: **enqueue**, used to add elements in the 'last position' (tail), and **dequeue**, which removes the element in the front (head).
+A _Queue_ is another abstract data type (ADT), its main methods are: **enqueue**, used to add elements in the 'last position' (tail), and **dequeue**, which removes the element in the front (head).
 This means that the queue behavior acts like (First in First Out), so the order to dispatch elements will be the same as the insertion order.
 
 Real life representations could be: people waiting to pay in a supermarket, vehicles in a tollbooth, Tortillas queue, IMSS, etc.
