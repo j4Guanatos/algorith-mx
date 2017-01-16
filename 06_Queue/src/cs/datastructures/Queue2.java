@@ -26,25 +26,29 @@ public class Queue2<T> {
 	
 	public void enqueue(T data) {
 		
-		Node<T> node = new Node<T>(data);
+		Node<T> newNode = new Node<T>(data);
 		
 		if(tail!=null) {
-			tail.next = node;
+			tail.next = newNode;
 		}
 		
-		tail = node;
+		tail = newNode;
+		
 		if(head == null) {
-			head = node;
+			head = newNode;
 		}
 	}
 	
 	public T dequeue() {
-		T data = head.data;
-		head = head.next;
 		
 		if(head == null) {
 			tail = null;
+			System.err.println("Queue is Empty");
+			return null;
 		}
+		
+		T data = head.data;
+		head = head.next;
 		
 		return data;
 	}
@@ -57,6 +61,6 @@ public class Queue2<T> {
 			System.out.print(queue.data + " ");
 			queue = queue.next;
 		}
+		System.out.println();
 	}
-	
 }

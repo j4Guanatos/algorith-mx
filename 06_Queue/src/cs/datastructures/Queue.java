@@ -34,7 +34,7 @@ public class Queue<T> {
 			array[headIndex] = null;
 			headIndex++;
 		} else {
-			System.err.println("Stack is Empty");
+			System.err.println("Queue is Empty");
 		}
 		
 		return value;
@@ -45,6 +45,7 @@ public class Queue<T> {
 		for(int i=0; i<capacity; i++) {
 			System.out.print(array[i]+ " ");
 		}
+		System.out.println();
 	}
 	
 }
