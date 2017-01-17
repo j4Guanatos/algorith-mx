@@ -17,3 +17,8 @@ hs_err_pid*
 # intellij files
 .idea/
 algorith-mx.iml
+
+*.backup
+out/
+
+*~

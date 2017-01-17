@@ -1,4 +1,4 @@
-# Algorithms EPAMX
+# Algorith-MX
 
 EPAM Mexico Algorithms study group.
 
@@ -35,20 +35,25 @@ Participants are free to use the programming language they want.
 
 ### Learning Path
 
-|  # | topic | date | owner | moderator |
-|----|-------|------|-------|-----------|
-| 01 | Big(O) Notation | Nov 22 | Christian Velázquez | Francisco Jauregui |
-| 02 | Arrays | Nov 29 | Francisco Jauregui | Emmanuel García |
-| 03 | HashTables | Dic 06 | Emmanuel García | Ernesto Espinosa |
-| 04 | Resizable Arrays | Dic 13 | Ernesto Espinosa | Sinuhé Jaime |
+| #    | topic            | date   | owner               | moderator          |
+| ---- | ---------------- | ------ | ------------------- | ------------------ |
+| 00   | Big(O) Notation  | Nov 21 | Christian Velázquez | Francisco Jauregui |
+| 01   | Arrays           | Nov 28 | Francisco Jauregui  | Emmanuel García    |
+| 02   | HashTables       | Dec 05 | Emmanuel García     | Ernesto Espinosa   |
+| 03   | Resizable Arrays | Dec 12 | Ernesto Espinosa    | Sinuhé Jaime       |
+| 04   | Linked List      | Dec 19 | Sinuhe Jaime        | Ernesto Espinosa   |
 
 ### References
 
 * Thomas Cormen - Introduction to Algorithms - [https://goo.gl/3dyovL]
 * Gayle Laakman - Cracking the Coding Interview - [https://goo.gl/v2sk1o]
 
+### Other resources
+* Data Structures and Algorithms Visualizations - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
 ### Contact
 
 * Christian [https://github.com/chris-mx]
 * Sier      [https://github.com/sierisimo]
 * Erneshto  [https://github.com/enchf]
+* Paco      [https://github.com/jaureguif]

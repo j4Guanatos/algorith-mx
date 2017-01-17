@@ -1,4 +1,4 @@
-# Algorithm Group - Session 0
+# Algorith-MX Group - Session 0
 # Topic: Big O Notation
 
 According to what we reviewed during the Tuesday, November 22 session A.K.A. _session 0_, work on the following task which has at least 3 possible solutions, each one with a different Big O complexity.
@@ -27,4 +27,8 @@ You can code your solution considering (or not) the following assumptions:
 2. The array contains unique elements
 3. The array holds only positive numbers
 
-#### Let's keep our clean code and beautiful!
+#### Let's keep our code clean and beautiful!
+
+#### Quick Big O complexities reference: [Big O Cheat Sheet]
+
+[Big O Cheat Sheet]: http://bigocheatsheet.com/
