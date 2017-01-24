@@ -107,6 +107,6 @@ var result = factorial(8);
 Given a nested array, write a function to flat it.
 
 ```
-array = [1,2,[3,[4,5],6],7];
-// [1,2,3,4,5,6,7] 
+deffinition:   array[] = [1,2,[3,[4,5],6],7];
+output:        // [1,2,3,4,5,6,7]
 ```
