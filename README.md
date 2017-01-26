@@ -47,6 +47,10 @@ Participants are free to use the programming language they want.
 
 * Thomas Cormen - Introduction to Algorithms - [https://goo.gl/3dyovL]
 * Gayle Laakman - Cracking the Coding Interview - [https://goo.gl/v2sk1o]
+  * [Cracking the Coding Interview Challenges @ HackerRank] (https://www.hackerrank.com/domains/tutorials/cracking-the-coding-interview)
+
+### Other resources
+* Data Structures and Algorithms Visualizations - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 
 ### Contact
 
