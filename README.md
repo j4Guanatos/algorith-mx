@@ -17,7 +17,7 @@ EPAM Mexico Algorithms study group.
 
 ### Setting up the problems and updating the branch
 
-Each topic will have the following convention: `##_<Topic>`, having ## = topic number. 
+Each topic will have the following convention: `##_<Topic>`, having ## = topic number.
 
 Example: `00_Big0` for Big(O) Notation.
 
@@ -42,6 +42,9 @@ Participants are free to use the programming language they want.
 | 02   | HashTables       | Dec 05 | Emmanuel García     | Ernesto Espinosa   |
 | 03   | Resizable Arrays | Dec 12 | Ernesto Espinosa    | Sinuhé Jaime       |
 | 04   | Linked List      | Dec 19 | Sinuhe Jaime        | Ernesto Espinosa   |
+| 05   | -                | -      | -                   | -                  |
+| 06   | -                | -      | -                   | -                  |
+| 07   | Recursion        | Jan 23 | Daniel Vega         | -                  |
 
 ### References
 
