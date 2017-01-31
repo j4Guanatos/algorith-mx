@@ -35,16 +35,21 @@ Participants are free to use the programming language they want.
 
 ### Learning Path
 
-| #    | topic            | date   | owner               | moderator          |
-| ---- | ---------------- | ------ | ------------------- | ------------------ |
-| 00   | Big(O) Notation  | Nov 21 | Christian Velázquez | Francisco Jauregui |
-| 01   | Arrays           | Nov 28 | Francisco Jauregui  | Emmanuel García    |
-| 02   | HashTables       | Dec 05 | Emmanuel García     | Ernesto Espinosa   |
-| 03   | Resizable Arrays | Dec 12 | Ernesto Espinosa    | Sinuhé Jaime       |
-| 04   | Linked List      | Dec 19 | Sinuhe Jaime        | Ernesto Espinosa   |
-| 05   | -                | -      | -                   | -                  |
-| 06   | -                | -      | -                   | -                  |
-| 07   | Recursion        | Jan 23 | Daniel Vega         | -                  |
+| #    | topic              | date   | owner               | moderator           |
+| ---- | ------------------ | ------ | ------------------- | ------------------- |
+| 00   | Big(O) Notation    | Nov 21 | Christian Velázquez | Francisco Jauregui  |
+| 01   | Arrays             | Nov 28 | Francisco Jauregui  | Emmanuel García     |
+| 02   | HashTables         | Dec 05 | Emmanuel García     | Ernesto Espinosa    |
+| 03   | Resizable Arrays   | Dec 12 | Ernesto Espinosa    | Sinuhé Jaime        |
+| 04   | Linked List        | Dec 19 | Sinuhe Jaime        | Ernesto Espinosa    |
+| 05   | Queues             | Jan 09 | Oscar Legorreta     | Sinuhe Jaime        |
+| 06   | Stacks             | Jan 16 | Luis Pool           | Oscar Legorreta     |
+| 07   | Recursion          | Jan 23 | Daniel Vega         | Emmanuel Garcia     |
+| 08   | Memory Complexity  | Jan 30 | Christian Velazquez | Ernesto Espinosa    |
+| 09   | Sorting Intro      | Feb 06 | Ernesto Espinosa    | Miriam Lee          |
+| 10   | Elementary Sorting | Feb 13 | Miriam Lee          | -                   |
+| 11   | Merge Sort         | Feb 20 | -                   | -                   |
+| 12   | Quick Sort         | Feb 27 | -                   | -                   |
 
 ### References
 
