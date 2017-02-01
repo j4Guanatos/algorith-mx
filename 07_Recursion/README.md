@@ -110,3 +110,16 @@ Given a nested array, write a function to flat it.
 deffinition:   array[] = [1,2,[3,[4,5],6],7];
 output:        // [1,2,3,4,5,6,7]
 ```
+
+### Extra Problem
+
+As an Oxxo worker, I need to determine the number of ways
+in which I can return change. I will be given the amount to
+be returned and the denominations of the coins.
+
+Sample Input and Output
+```
+amount: 4
+coins : [1,2]
+output: 3 ([1,1,1,1],[1,1,2],[2,2])
+```
