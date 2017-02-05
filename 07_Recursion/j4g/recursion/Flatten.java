@@ -5,7 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by Ernesto_Espinosa on 1/30/2017.
+ * Array Flattener. Converts any array to an array of depth 1.
+ * If the object passed as argument is not an array (depth 0), is converted to a depth-1 array.
  */
 public class Flatten {
 
