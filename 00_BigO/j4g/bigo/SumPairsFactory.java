@@ -13,11 +13,11 @@ public final class SumPairsFactory {
     private SumPairsFactory() { throw new UnsupportedOperationException(); }
     private static final Map<String, Function<Integer, SumPairs>> providers = new ConcurrentHashMap<>();
 
-    public void register(String key, Function<Integer, SumPairs> algorithm) {
+    public static void register(String key, Function<Integer, SumPairs> algorithm) {
         providers.put(key, algorithm);
     }
 
-    public SumPairs getImplementation(String name, int target) {
+    public static SumPairs getImplementation(String name, int target) {
         if (!providers.containsKey(name)) throw new IllegalArgumentException();
         return providers.get(name).apply(target);
     }

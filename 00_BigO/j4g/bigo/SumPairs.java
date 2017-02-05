@@ -1,6 +1,6 @@
 package j4g.bigo;
 
-import j4g.util.Tuple;
+import j4g.util.IntTuple;
 
 import java.util.stream.Stream;
 
@@ -14,7 +14,7 @@ public interface SumPairs {
      * @param source Array source of numbers.
      * @return Stream of integer tuples.
      */
-    Stream<Tuple<Integer>> find(int...source);
+    Stream<IntTuple> find(int...source);
 
     /**
      * Target element to be searched for.
