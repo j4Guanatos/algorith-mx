@@ -19,7 +19,7 @@ EPAM Mexico Algorithms study group.
 
 Each topic will have the following convention: `##_<Topic>`, having ## = topic number.
 
-Example: `00_Big0` for Big(O) Notation.
+Example: `00_BigO` for Big(O) Notation.
 
 Inside the topic folder, on master branch the following files will be placed:
 
