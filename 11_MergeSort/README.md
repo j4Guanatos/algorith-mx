@@ -58,6 +58,10 @@ def merge(arr, p, q, r):
         else                  arr[k] = aux[i+1]; i = i+1;
 ```
 
+## Exercise
+
+[Counting Inversions - Taken from Hackerrank](https://www.hackerrank.com/challenges/ctci-merge-sort)
+
 ## References
 
 [1] Thomas Cormen, "Algorithms Unlocked" - [Buy @ Amazon](http://a.co/dVibTKu)
