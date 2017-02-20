@@ -27,6 +27,37 @@ The _divide and conquer_ operation for this algorithm goes as follows: [1]
 
 ![Merge Sort Example](img/merge-sort.gif)
 
+The algorithm requires two operations: _merge sort_ itself, which does the partition (divide and conquer), and 
+_merge_, which textually merges the sorting result of both partitions.
+
+### Pseudo Code
+
+Merge Sort:
+
+```
+def merge_sort(arr, p, r):
+    # If the p is greater or equal to r, the sub-array has at most one element, trivially already sorted.
+    if p < r:
+        q = floor((p + r)/2)
+        merge_sort(arr, p, q)
+        merge_sort(arr, q + 1, r)
+        merge(arr, p, q, r)
+```
+
+Merge:
+
+```
+def merge(arr, p, q, r):
+    i = p
+    j = q + 1
+    aux = arr[:]     # copies the array.
+    for k in range(p, r+1):
+        if   i > q:           arr[k] = aux[j+1]; j = j+1;
+        elif j > r:           arr[k] = aux[i+1]; i = i+1;
+        elif aux[j] < aux[i]: arr[k] = aux[j+1]; j = j+1;
+        else                  arr[k] = aux[i+1]; i = i+1;
+```
+
 ## References
 
 [1] Thomas Cormen, "Algorithms Unlocked" - [Buy @ Amazon](http://a.co/dVibTKu)
