@@ -47,9 +47,9 @@ Participants are free to use the programming language they want.
 | 07   | Recursion          | Jan 23 | Daniel Vega         | Emmanuel Garcia     |
 | 08   | Memory Complexity  | Jan 30 | Christian Velazquez | Ernesto Espinosa    |
 | 09   | Sorting Intro      | Feb 06 | Ernesto Espinosa    | Miriam Lee          |
-| 10   | Elementary Sorting | Feb 13 | Miriam Lee          | -                   |
-| 11   | Merge Sort         | Feb 20 | -                   | -                   |
-| 12   | Quick Sort         | Feb 27 | -                   | -                   |
+| 10   | Elementary Sorting | Feb 13 | Miriam Lee          | Ernesto Espinosa    |
+| 11   | Merge Sort         | Feb 20 | Ernesto Espinosa    | Luis Gerardo Garcia |
+| 12   | Quick Sort         | Feb 27 | Eduardo Hernandez   | Ernesto Espinosa    |
 
 ### References
 
