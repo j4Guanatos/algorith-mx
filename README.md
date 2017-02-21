@@ -49,7 +49,10 @@ Participants are free to use the programming language they want.
 | 09   | Sorting Intro      | Feb 06 | Ernesto Espinosa    | Miriam Lee          |
 | 10   | Elementary Sorting | Feb 13 | Miriam Lee          | Ernesto Espinosa    |
 | 11   | Merge Sort         | Feb 20 | Ernesto Espinosa    | Luis Gerardo Garcia |
-| 12   | Quick Sort         | Feb 27 | Eduardo Hernandez   | Ernesto Espinosa    |
+| 12   | Quick Sort         | Feb 27 | Eduardo Hernandez   | Christian Velazquez |
+| 13   | Heap Sort          | Mar 06 | Rafael Benitez      | Eduardo Hernandez   |
+| 14   | Linear Sorting     | Mar 13 | Luis Gerardo Garcia | Mayra Monreal       |
+| 15   | Binary Trees       | Mar 20 | Mayra Monreal       | Ivan Hernandez      |
 
 ### References
 
