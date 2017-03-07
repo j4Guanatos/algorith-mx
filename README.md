@@ -52,7 +52,11 @@ Participants are free to use the programming language they want.
 | 12   | Quick Sort         | Feb 27 | Eduardo Hernandez   | Christian Velazquez |
 | 13   | Heap Sort          | Mar 06 | Rafael Benitez      | Eduardo Hernandez   |
 | 14   | Linear Sorting     | Mar 13 | Luis Gerardo Garcia | Mayra Monreal       |
-| 15   | Binary Trees       | Mar 20 | Mayra Monreal       | Ivan Hernandez      |
+| 15   | Trees Introduction | Mar 20 | Mayra Monreal       | Ivan Hernandez      |
+| 16   | Binary Trees       | Mar 27 | Ivan Hernandez      | Ulises Garcia       |
+| 17   | Balanced Trees     | Apr 03 | Ulises Garcia       | Alberto Chacon      |
+| 18   | Graph Introduction | Apr 10 | Alberto Chacon      | Hugo Vega           |
+| 19   | Kruskal Algorithm  | Apr 17 | Hugo Vega           | Daniel Pedraza      |
 
 ### References
 
