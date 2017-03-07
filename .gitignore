@@ -1,6 +1,4 @@
-/bin/
-.classpath
-.project
+# Compiled java class file
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -16,9 +14,33 @@ hs_err_pid*
 
 # intellij files
 .idea/
-algorith-mx.iml
+*.iml
 
 *.backup
 out/
 
 *~
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+.project
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# Eclipse JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Eclipse Code Recommenders
+.recommenders/
+
