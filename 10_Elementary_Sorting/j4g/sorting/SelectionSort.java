@@ -1,4 +1,12 @@
-public static class Selection {
+package j4g.sorting;
+
+import java.util.Arrays;
+
+import static j4g.sorting.SortOps.exch;
+import static j4g.sorting.SortOps.less;
+import static j4g.sorting.SortOps.showA;
+
+public class SelectionSort {
 
     public static Comparable[] sort(Comparable[] a) {
       int N = a.length;
