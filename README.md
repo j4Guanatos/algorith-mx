@@ -35,28 +35,36 @@ Participants are free to use the programming language they want.
 
 ### Learning Path
 
-| #    | topic              | date   | owner               | moderator           |
-| ---- | ------------------ | ------ | ------------------- | ------------------- |
-| 00   | Big(O) Notation    | Nov 21 | Christian Velázquez | Francisco Jauregui  |
-| 01   | Arrays             | Nov 28 | Francisco Jauregui  | Emmanuel García     |
-| 02   | HashTables         | Dec 05 | Emmanuel García     | Ernesto Espinosa    |
-| 03   | Resizable Arrays   | Dec 12 | Ernesto Espinosa    | Sinuhé Jaime        |
-| 04   | Linked List        | Dec 19 | Sinuhe Jaime        | Ernesto Espinosa    |
-| 05   | Queues             | Jan 09 | Oscar Legorreta     | Sinuhe Jaime        |
-| 06   | Stacks             | Jan 16 | Luis Pool           | Oscar Legorreta     |
-| 07   | Recursion          | Jan 23 | Daniel Vega         | Emmanuel Garcia     |
-| 08   | Memory Complexity  | Jan 30 | Christian Velazquez | Ernesto Espinosa    |
-| 09   | Sorting Intro      | Feb 06 | Ernesto Espinosa    | Miriam Lee          |
-| 10   | Elementary Sorting | Feb 13 | Miriam Lee          | Ernesto Espinosa    |
-| 11   | Merge Sort         | Feb 20 | Ernesto Espinosa    | Luis Gerardo Garcia |
-| 12   | Quick Sort         | Feb 27 | Eduardo Hernandez   | Christian Velazquez |
-| 13   | Heap Sort          | Mar 06 | Rafael Benitez      | Eduardo Hernandez   |
-| 14   | Linear Sorting     | Mar 13 | Luis Gerardo Garcia | Mayra Monreal       |
-| 15   | Trees Introduction | Mar 20 | Mayra Monreal       | Ivan Hernandez      |
-| 16   | Binary Trees       | Mar 27 | Ivan Hernandez      | Ulises Garcia       |
-| 17   | Balanced Trees     | Apr 03 | Ulises Garcia       | Alberto Chacon      |
-| 18   | Graph Introduction | Apr 10 | Alberto Chacon      | Hugo Vega           |
-| 19   | Kruskal Algorithm  | Apr 17 | Hugo Vega           | Daniel Pedraza      |
+| #    | topic               | date   | owner               | moderator           |
+| ---- | ------------------- | ------ | ------------------- | ------------------- |
+| 00   | Big(O) Notation     | Nov 21 | Christian Velázquez | Francisco Jauregui  |
+| 01   | Arrays              | Nov 28 | Francisco Jauregui  | Emmanuel García     |
+| 02   | HashTables          | Dec 05 | Emmanuel García     | Ernesto Espinosa    |
+| 03   | Resizable Arrays    | Dec 12 | Ernesto Espinosa    | Sinuhé Jaime        |
+| 04   | Linked List         | Dec 19 | Sinuhe Jaime        | Ernesto Espinosa    |
+| 05   | Queues              | Jan 09 | Oscar Legorreta     | Sinuhe Jaime        |
+| 06   | Stacks              | Jan 16 | Luis Pool           | Oscar Legorreta     |
+| 07   | Recursion           | Jan 23 | Daniel Vega         | Emmanuel Garcia     |
+| 08   | Memory Complexity   | Jan 30 | Christian Velazquez | Ernesto Espinosa    |
+| 09   | Sorting Intro       | Feb 06 | Ernesto Espinosa    | Miriam Lee          |
+| 10   | Elementary Sorting  | Feb 13 | Miriam Lee          | Ernesto Espinosa    |
+| 11   | Merge Sort          | Feb 20 | Ernesto Espinosa    | Luis Gerardo Garcia |
+| 12   | Quick Sort          | Feb 27 | Eduardo Hernandez   | Christian Velazquez |
+| 13   | Heap Sort           | Mar 06 | Rafael Benitez      | Eduardo Hernandez   |
+| 14   | Linear Sorting      | Mar 13 | Luis Gerardo Garcia | Mayra Monreal       |
+| 15   | Trees Introduction  | Mar 20 | Mayra Monreal       | Ivan Hernandez      |
+| 16   | Binary Trees        | Mar 27 | Ulises Garcia       | Hugo Vega           |
+| 17   | Balanced Trees      | Apr 03 | Ivan Hernandez      | Alberto Chacon      |
+| 18   | Graph Introduction  | Apr 10 | Alberto Chacon      | Ulises Garcia       |
+| 19   | Kruskal Algorithm   | Apr 17 | Hugo Vega           | Daniel Pedraza      |
+| 20   | DFS/BFS on Graphs   | Apr 24 | Daniel Pedraza      | Victor Parra        |
+| 21   | Dynamic Programming | May 01 | Victor Parra        | Dionicio Rodriguez  |
+| 22   | Shortest Paths      | May 08 | Dionicio Rodriguez  | Orlando Cano        |
+| 23   | A* Algorithm        | May 15 | Orlando Cano        | Jossue Loubet       |
+
+### Programming Contests
+
+To be defined.
 
 ### References
 
