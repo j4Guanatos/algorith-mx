@@ -53,9 +53,9 @@ Participants are free to use the programming language they want.
 | 13   | Heap Sort           | Mar 06 | Rafael Benitez      | Eduardo Hernandez   |
 | 14   | Linear Sorting      | Mar 13 | Luis Gerardo Garcia | Mayra Monreal       |
 | 15   | Trees Introduction  | Mar 20 | Mayra Monreal       | Ivan Hernandez      |
-| 16   | Binary Trees        | Mar 27 | Ulises Garcia       | Hugo Vega           |
+| 16   | Binary Trees        | Mar 27 | Ulises Mancilla     | Hugo Vega           |
 | 17   | Balanced Trees      | Apr 03 | Ivan Hernandez      | Alberto Chacon      |
-| 18   | Graph Introduction  | Apr 10 | Alberto Chacon      | Ulises Garcia       |
+| 18   | Graph Introduction  | Apr 10 | Alberto Chacon      | Ulises Mancilla     |
 | 19   | Kruskal Algorithm   | Apr 17 | Hugo Vega           | Daniel Pedraza      |
 | 20   | DFS/BFS on Graphs   | Apr 24 | Daniel Pedraza      | Victor Parra        |
 | 21   | Dynamic Programming | May 01 | Victor Parra        | Dionicio Rodriguez  |
