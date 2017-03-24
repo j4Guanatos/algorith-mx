@@ -30,40 +30,15 @@ object InversionCount {
       if (k > q) 0
       else {
         arr(k) = if (arr(i) <= arr(j) || j > q) aux(i) else aux(j)
-        merge(if (arr(i) > arr(j)) 1 else 0
-
-
-
-      while (k <= q) {
-        {
-          if (i > mid) arr(k) = aux({
-            j += 1; j - 1
-          })
-          else if (j > q) arr(k) = aux({
-            i += 1; i - 1
-          })
-          else if (aux(i) > aux(j)) {
-            count += mid - i + 1
-            arr(k) = aux({
-              j += 1; j - 1
-            })
-          }
-          else arr(k) = aux({
-            i += 1; i - 1
-          })
-        }
-        {
-          k += 1; k - 1
-        }
+        merge(if (arr(i) > arr(j)) 1 else 0, 1, 1)
       }
 
-      return count
     }
     if (isSorted(arr, p, q)) 0
     else ops(p, mid) + ops(mid + 1, q) + merge(p, mid, q)
   }
 
-  def swaps(arr: Array[Int]) = swaps(arr, arr.clone)(0, arr.length - 1)
+  def swaps(arr: Array[Int]):Long = swaps(arr, arr.clone)(0, arr.length - 1)
 
   def main(args: Array[String]): Unit = {
     val file = readLine()
