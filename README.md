@@ -55,7 +55,7 @@ Participants are free to use the programming language they want.
 | 15   | Trees Introduction  | Mar 20 | Mayra Monreal       | Ivan Hernandez      |
 | 16   | Binary Trees        | Mar 27 | Ulises Mancilla     | Hugo Vega           |
 | 17   | Balanced Trees      | Apr 10 | Ivan Hernandez      | Alberto Chacon      |
-| 18   | Graph Introduction  | Apr 17 | Alberto Chacon      | Ulises Mancilla     |
+| 18   | Graph Introduction  | Apr 17 | Ernesto Espinosa    | Ulises Mancilla     |
 | 19   | Kruskal Algorithm   | Apr 24 | Hugo Vega           | Daniel Pedraza      |
 | 20   | DFS/BFS on Graphs   | May 02 | Daniel Pedraza      | Victor Parra        |
 | 21   | Dynamic Programming | May 08 | Victor Parra        | Dionicio Rodriguez  |
