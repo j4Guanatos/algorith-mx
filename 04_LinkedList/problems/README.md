@@ -68,4 +68,6 @@ A palindrome is a word, phrase, number, or other sequence of characters which re
 
 `false`
 
+* * * * 
 
+Also check the path on hackerrank: [Linked Lists](https://www.hackerrank.com/domains/data-structures/linked-lists)
